@@ -26,4 +26,4 @@ This is a **Spotify Clone** project made with **HTML**, **CSS**, and **SCSS**. I
 - **_aside.scss**: Styles for the aside menu (like playlists and navigation links).  
 - **_player.scss**: Styles for the music player controls (play, pause, next, etc.).  
 
-### 🗂 Folder Structure  
+

@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+aside {
+  background-color: #282828;
+  padding: 20px;
+  border-radius: 10px;
+}
+@media (max-width: 1200px) {
+  aside {
+    padding: 20px 10px;
+  }
+}
+aside figure {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+aside figure img {
+  width: 40px;
+}
+aside figure span {
+  font-size: 25px;
+  font-weight: bold;
+  color: #1db954;
+}
+@media (max-width: 992px) {
+  aside figure span {
+    display: none;
+  }
+}
+aside nav {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+aside nav a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+}
+aside nav a:hover {
+  background-color: #1db954;
+  color: #121212;
+}
+@media (max-width: 992px) {
+  aside nav a i {
+    font-size: 19px;
+  }
+}
+@media (max-width: 992px) {
+  aside nav a span {
+    display: none;
+  }
+}
+
+main {
+  background-color: #282828;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+main header {
+  display: flex;
+  background-color: #121212;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 20px;
+}
+main header form {
+  display: flex;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.211);
+}
+@media (max-width: 650px) {
+  main header form {
+    max-width: unset;
+  }
+}
+main header form input {
+  background: transparent;
+  padding: 15px;
+  color: rgba(255, 255, 255, 0.78);
+  width: 100%;
+}
+main header form button {
+  background: none;
+  color: rgba(255, 255, 255, 0.78);
+  cursor: pointer;
+  margin-right: 10px;
+}
+main header nav {
+  display: flex;
+  gap: 15px;
+}
+@media (max-width: 650px) {
+  main header nav {
+    display: none;
+  }
+}
+main header nav span {
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  color: white;
+  padding: 10px;
+}
+main section {
+  flex: 1;
+}
+main section h2 {
+  margin-top: 20px;
+  color: white;
+}
+main section .list {
+  position: relative;
+  margin: 20px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+main section .list .card {
+  background-color: #121212;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: rgba(255, 255, 255, 0.78);
+}
+main section .list .card:hover .play {
+  bottom: 20px;
+  opacity: 1;
+}
+main section .list .card:hover .play i {
+  pointer-events: none;
+}
+main section .list .card figure {
+  position: relative;
+}
+main section .list .card figure img {
+  width: 100%;
+  border-radius: 10px;
+}
+main section .list .card figure .play {
+  background-color: #1db954;
+  height: 40px;
+  width: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 23px;
+  position: absolute;
+  right: 10px;
+  bottom: -20px;
+  opacity: 0;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+main section .list .card figure .play:hover {
+  background-color: #0f6d32;
+  transform: rotate(360deg) scale(1.1);
+}
+main section .list .card .card-info {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.player {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.player .info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.player .info img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.player .info div h5 {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+.player .info div p {
+  color: rgb(150, 150, 150);
+}
+.player audio {
+  width: 40%;
+}
+.player .icons {
+  color: white;
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .player .icons {
+    display: none;
+  }
+}
+
+@keyframes turn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate {
+  animation: turn 4s infinite linear;
+}
+
+body {
+  font-family: "Poppins", serif;
+  background-color: black;
+  height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.78);
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+  height: calc(100vh - 120px);
+}
+
+/* From Uiverse.io by satyamchaudharydev */
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-left: -75px;
+}
+
+.spinner span {
+  position: absolute;
+  top: 50%;
+  left: var(--left);
+  width: 35px;
+  height: 7px;
+  background: white;
+  animation: dominos 1s ease infinite;
+  box-shadow: 2px 2px 3px 0px black;
+}
+
+.spinner span:nth-child(1) {
+  --left: 80px;
+  animation-delay: 0.125s;
+}
+
+.spinner span:nth-child(2) {
+  --left: 70px;
+  animation-delay: 0.3s;
+}
+
+.spinner span:nth-child(3) {
+  left: 60px;
+  animation-delay: 0.425s;
+}
+
+.spinner span:nth-child(4) {
+  animation-delay: 0.54s;
+  left: 50px;
+}
+
+.spinner span:nth-child(5) {
+  animation-delay: 0.665s;
+  left: 40px;
+}
+
+.spinner span:nth-child(6) {
+  animation-delay: 0.79s;
+  left: 30px;
+}
+
+.spinner span:nth-child(7) {
+  animation-delay: 0.915s;
+  left: 20px;
+}
+
+.spinner span:nth-child(8) {
+  left: 10px;
+}
+
+@keyframes dominos {
+  50% {
+    opacity: 0.7;
+  }
+  75% {
+    transform: rotate(90deg);
+  }
+  80% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.css.map */

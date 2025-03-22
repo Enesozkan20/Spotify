@@ -1,0 +1,59 @@
+.player {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+
+        div {
+            h5 {
+                font-size: 18px;
+                font-weight: 500;
+                color: white;
+            }
+
+            p {
+                color: rgb(150, 150, 150);
+            }
+        }
+    }
+
+    audio {
+        width: 40%;
+    }
+
+    .icons {
+        color: white;
+        display: flex;
+        gap: 20px;
+        font-size: 20px;
+
+        @include md {
+            display: none;
+        }
+    }
+}
+
+@keyframes turn {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate {
+    animation: turn 4s infinite linear;
+}

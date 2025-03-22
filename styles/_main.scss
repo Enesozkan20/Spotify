@@ -1,0 +1,139 @@
+@import"./variables";
+
+main {
+    background-color: $grayColor;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow-y: auto;
+
+    header {
+        display: flex;
+        background-color: $blackColor;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        border-radius: 10px;
+        gap: 20px;
+
+        form {
+            display: flex;
+            width: 100%;
+            max-width: 350px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.211);
+
+            @media (max-width: 650px) {
+                max-width: unset;
+            }
+
+            input {
+                background: transparent;
+                padding: 15px;
+                color: $textColor;
+                width: 100%;
+            }
+
+            button {
+                background: none;
+                color: $textColor;
+                cursor: pointer;
+                margin-right: 10px;
+            }
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+
+            @media (max-width: 650px) {
+                display: none;
+            }
+
+            span {
+                font-size: 14px;
+                cursor: pointer;
+                white-space: nowrap;
+                color: white;
+                padding: 10px;
+            }
+        }
+    }
+
+    section {
+        flex: 1;
+
+        h2 {
+            margin-top: 20px;
+            color: white;
+        }
+
+        .list {
+            position: relative;
+            margin: 20px;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+
+            .card {
+                background-color: #121212;
+                padding: 10px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                height: fit-content;
+                color: $textColor;
+
+                &:hover .play {
+                    bottom: 20px;
+                    opacity: 1;
+
+                    i {
+                        pointer-events: none;
+                    }
+                }
+
+                figure {
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+
+                    .play {
+                        background-color: $greenColor;
+                        height: 40px;
+                        width: 40px;
+                        display: grid;
+                        place-items: center;
+                        border-radius: 50%;
+                        font-size: 23px;
+                        position: absolute;
+                        right: 10px;
+                        bottom: -20px;
+                        opacity: 0;
+                        transition: all 0.3s;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: #0f6d32;
+                            transform: rotate(360deg) scale(1.1);
+                        }
+                    }
+                }
+
+                .card-info {
+                    height: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}

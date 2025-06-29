@@ -10,7 +10,7 @@ This is a **Spotify Clone** project made with **HTML**, **CSS**, and **SCSS**. I
 
 ## 🛠️ Technologies Used  
 - **HTML5**: For the structure of the page.  
--**JavaScript**:For dynamical functions and page.
+- **JavaScript**:For dynamical functions and page.
 - **SCSS**: For modular, cleaner, and reusable CSS code.  
 
 ## 📂 Project Files  

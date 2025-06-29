@@ -1,6 +1,6 @@
 # Spotify Clone 🎵  
 
-This is a **Spotify Clone** project made with **HTML**, **CSS**, and **SCSS**. It replicates the Spotify interface and helps practice frontend development and modular SCSS structure.  
+This is a **Spotify Clone** project made with **HTML**, **JavaScript**, and **SCSS**. It replicates the Spotify interface and helps practice frontend development and modular SCSS structure.  
 
 ## 🌟 Features  
 - **Responsive Design**: Works on different screen sizes (mobile, tablet, desktop).  
@@ -10,7 +10,7 @@ This is a **Spotify Clone** project made with **HTML**, **CSS**, and **SCSS**. I
 
 ## 🛠️ Technologies Used  
 - **HTML5**: For the structure of the page.  
-- **JavaScript**:For dynamical functions and page.
+- **JavaScript**: For dynamical functions and page.
 - **SCSS**: For modular, cleaner, and reusable CSS code.  
 
 ## 📂 Project Files  
@@ -27,3 +27,7 @@ This is a **Spotify Clone** project made with **HTML**, **CSS**, and **SCSS**. I
 - **_player.scss**: Styles for the music player controls (play, pause, next, etc.).  
 
 
+# Preview 
+
+
+![SpotifyClone-GoogleChrome2025-06-2914-38-27-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/51b494ed-5019-474d-97b8-06e1b314d132)
